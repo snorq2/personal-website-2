@@ -1,0 +1,301 @@
+:root {
+  --donkeybrown: #a89786;
+  --birch: #302b1f;
+  --shinglefawn: #6e5130;
+  --saddle: #553628;
+}
+
+/* Site-wide styles */
+
+body {
+  background-color: var(--saddle);
+  margin: 0;
+  padding: 0;
+  color: var(--birch);
+  font-family: "BagnardRegular";
+}
+
+@media (min-width: 1025px) {
+  .content {
+    background-color: var(--donkeybrown);
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    background-color: var(--donkeybrown);
+    padding: 25px;
+  }
+}
+
+.content-header {
+  display: block;
+  text-align: center;
+}
+
+.content-element {
+  margin: 15px;
+}
+
+/* Index/about styles */
+
+.index {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#front-image {
+  border-radius: 15px;
+}
+
+/* Resume styles */
+
+.resume-section {
+  border-top: var(--donkeybrown);
+  border-top-style: groove;
+  border-top-width: 4px;
+}
+
+.resume-section ul {
+  list-style-type: circle;
+}
+
+.resume-degree {
+  margin: 0px;
+}
+
+.resume-grad-date {
+  margin-top: 0px;
+}
+
+/* Project syles */
+
+.projects {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px 0px;
+}
+
+.project-box {
+  display: inline-block;
+  width: 275px;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  border-style: double;
+  border-color: var(--saddle);
+  border-width: 4px;
+  border-radius: 4px;
+}
+
+.project-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 210px;
+  margin: auto;
+}
+
+.project-image {
+  width: 200px;
+  margin: auto;
+}
+
+.project-title {
+  height: 2em;
+  margin: 15px 10px;
+}
+
+.project-description {
+  height: 110px;
+  margin: 10px;
+}
+
+.project-link {
+  display: block;
+  border-color: var(--birch);
+  border-style: groove;
+  border-radius: 4px;
+  width: fit-content;
+  text-decoration: none;
+  margin: 10px auto;
+  padding: 5px;
+  color: inherit;
+}
+
+.project-link:hover {
+  background-color: var(--birch);
+  color: whitesmoke;
+}
+
+/* Form styles */
+
+#form-outline {
+  display: block;
+  border-style: ridge;
+  border-color: var(--saddle);
+  border-width: 4px;
+  border-radius: 4px;
+  width: fit-content;
+  text-align: start;
+  justify-content: start;
+  margin: auto;
+}
+
+@media (min-width: 769px) {
+  .form-element {
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+    margin: 15px;
+    font-family: inherit;
+  }
+
+  #message {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-element {
+    display: grid;
+    margin: 15px;
+    font-family: inherit;
+  }
+
+  #message {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+#btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  border-color: var(--saddle);
+  border-radius: 4px;
+  width: 100px;
+  background-color: var(--birch);
+  color: whitesmoke;
+}
+
+.btn:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+/* Navbar styles */
+
+#navbar {
+  /* width: 100%; */
+}
+
+.nav-list {
+  display: flex;
+  height: 50px;
+  background-color: var(--birch);
+  color: white;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.nav-link {
+  display: flex;
+  width: 85px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+.icon {
+  display: none;
+}
+
+#nav-head {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+  margin: auto auto auto 15px;
+}
+
+#nav-head a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
+
+#nav-head h1 {
+  margin: auto 0;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    display: flex;
+    color: white;
+    height: 50px;
+    width: 75px;
+  }
+
+  .nav-wide {
+    display: none;
+  }
+
+  .nav-list.responsive {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-list.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 75px;
+  }
+
+  .nav-list.responsive .nav-wide {
+    display: flex;
+    margin: 10px;
+    justify-content: left;
+  }
+}
+
+/* Footer styles */
+
+#footer {
+  display: flex;
+  /* width: 100%; */
+  height: 50px;
+  justify-content: right;
+  background-color: var(--birch);
+  color: white;
+}
+
+#footer p {
+  margin-right: 15px;
+}
+
+#footer a {
+  margin: auto auto auto 15px;
+}
