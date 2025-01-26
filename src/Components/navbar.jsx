@@ -30,7 +30,7 @@ function NavBar () {
                 <a
                 className="nav-link icon"
                 href="javascript:void(0);"
-                onClick="hamburger_click()"
+                onClick={hamburger_click}
                 aria-label="dropdown menu"
                 >
                 <i className="fa fa-bars" aria-hidden="true" />
