@@ -1,4 +1,3 @@
-import './App.css'
 import '../styles/styles.css'
 import NavBar from './Components/navbar'
 import Footer from './Components/footer'
@@ -6,24 +5,12 @@ import Footer from './Components/footer'
 function App() {
   return (
     <>
-      <meta charSet="UTF-8" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Home</title>
-      <link rel="stylesheet" href="styles/styles.css" />
-      <link rel="stylesheet" href="styles/index.css" />
-      <link
-        rel="stylesheet"
-        media="screen"
-        href="https://fontlibrary.org//face/bagnard"
-        type="text/css"
-      />
       <NavBar />
       <main className="content index">
         <img
           className="content-element"
           id="front-image"
-          src="images/Sawyer_Face_1.jpg"
+          src="/Sawyer_Face_1.jpg"
           alt="Sawyer's face"
         />
         <p className="content-element">

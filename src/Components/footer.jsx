@@ -1,14 +1,15 @@
 import '../../styles/styles.css'
+import LinkedInImage from "../assets/In-White-34.png"
 
 function Footer () {
 
     return (
-        <>
+        <div>
             <a href="https://www.linkedin.com/in/sawyer-norquist-33040582/">
-                <img src="images/In-White-34.png" alt="LinkedIn" />
+                <img src={LinkedInImage} alt="LinkedIn" />
             </a>
             <p>© Sawyer Norquist 2022</p>
-        </>
+        </div>
     )
 }
 
