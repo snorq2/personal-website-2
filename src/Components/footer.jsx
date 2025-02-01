@@ -4,7 +4,7 @@ import LinkedInImage from "../assets/In-White-34.png"
 function Footer () {
 
     return (
-        <div>
+        <div id="footer">
             <a href="https://www.linkedin.com/in/sawyer-norquist-33040582/">
                 <img src={LinkedInImage} alt="LinkedIn" />
             </a>
